@@ -32,16 +32,16 @@ export function System({ children }) {
   })
 }
 export async function config(data) {
+  // get local storage tokens
+  const localStorageTokens = localStorage.getItem('radsFigmaTokens')
+  if (localStorageTokens) {
+    tokens = JSON.parse(localStorageTokens)
+  } else {
+    tokens = defaultTokens
+  }
+  // get figma tokens
   const figmaTokens = await figmaApi(data)
   if (figmaTokens?.isReadyForDeploy?.isReady) {
-    tokens = figmaTokens
-    localStorage.setItem('figmaTokens', JSON.stringify(figmaTokens))
-  } else {
-    const localStorageTokens = localStorage.getItem('figmaTokens')
-    if (!localStorageTokens) {
-      tokens = defaultTokens
-    } else {
-      tokens = JSON.parse()
-    }
+    localStorage.setItem('radsFigmaTokens', JSON.stringify(figmaTokens))
   }
 }

@@ -1,10 +1,13 @@
 {
-  "name": "ris-2023-design-system-sdk",
+  "name": "rads-sdk",
   "version": "1.0.0",
-  "description": "",
+  "description": "Design system SDK to import design tokens from Figma file",
   "main": "src/index.js",
-  "author": "",
+  "author": "Redradix RIS 2023",
   "license": "ISC",
+  "homepage": "https://github.com/redradix/ris-2023-design-system-sdk.git",
+  "url": "https://github.com/redradix/ris-2023-design-system-sdk.git",
+  "email": "development@redradix.com",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",

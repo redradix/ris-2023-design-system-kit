@@ -1,0 +1,30 @@
+{
+  "color": {
+    "primary": "#FF0000",
+    "secondary": "#1d698f"
+  },
+  "isReadyForDeploy": {
+    "color": "#00ff00",
+    "isReady": true
+  },
+  "spacing": {
+    "sm": "8px",
+    "md": "16px",
+    "lg": "32px",
+    "xl": "128px"
+  },
+  "typography": {
+    "body": {
+      "fontFamily": "'General Sans'",
+      "fontSize": "16px",
+      "lineHeight": "21px",
+      "fontWeight": 500
+    },
+    "heading": {
+      "fontFamily": "'Degular Display'",
+      "fontSize": "48px",
+      "lineHeight": "63px",
+      "fontWeight": 700
+    }
+  }
+}

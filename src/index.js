@@ -14,10 +14,11 @@ let tokens
 export function Button({ color, children }) {
   return /*#__PURE__*/ _jsx(MUIButton, {
     variant: 'contained',
+    color,
+    children: children,
     sx: {
-      color
-    },
-    children: children
+      boxShadow: 'none'
+    }
   })
 }
 export function Typography({ color, variant, children }) {

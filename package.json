@@ -1,6 +1,6 @@
 {
   "name": "rads-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Design system SDK to import design tokens from Figma file",
   "main": "src/index.js",
   "author": "Redradix RIS 2023",

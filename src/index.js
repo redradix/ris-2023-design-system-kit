@@ -30,13 +30,19 @@ export function Typography({ color, variant, children }) {
 
 export function System({ children }) {
   const {
-    color: { primary }
+    color: { primary, secondary }
   } = tokens
 
   const theme = createTheme({
     palette: {
       primary: {
         main: primary
+      },
+      primary: {
+        main: primary
+      },
+      secondary: {
+        main: secondary
       }
     },
     typography: {
@@ -47,8 +53,12 @@ export function System({ children }) {
       body1: {
         ...tokens.typography.body,
         fontSize: parseInt(tokens.typography.body.fontSize)
+      },
+      button: {
+        ...tokens.typography.body,
+        fontSize: parseInt(tokens.typography.body.fontSize),
+        textTransform: 'none'
       }
-      // body: tokens.typography.body
     }
   })
   return /*#__PURE__*/ _jsx(ThemeProvider, {
